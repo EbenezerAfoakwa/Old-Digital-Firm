@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+    <!-- Compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+
+
+
+
+
+
+    <style>
+        .link-area {
+            position: absolute;
+            bottom: 20px;
+            right: 1.4rem;
+            padding-top: 20px;
+            padding: 10px;
+            border-radius: 15px;
+            background: #29363B;
+        }
+
+        .link-area a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+        integrity="sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"
+        integrity="sha512-tH/3PjBLfhnGAeDP02oajlFc1kZoExoUvVK2x3Vwcqi6/a9h9SM+e9ls+GJppIkX6lqLgRF00dmcAWeq4iS0/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"
+        integrity="sha512-48rakD7aXAKjynjPfmdjgeHrLZcVimYHIq4hS4emn7MMLhfcpS5Mt4Mn3HeCr4vMGKUKgfoZ++ceCeR6UAKhWA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+
+
+    <script src="home.js"></script>
+
+
+
+
+
+
+
+    <div class="overlay-navigation">
+        <nav role="navigation">
+            <ul>
+                <li></li>
+                <li><a href="#" data-content="Curious?">Home</a></li>
+                <li><a href="#" data-content="I got game">About</a></li>
+                <li><a href="#" data-content="Only the finest">Works</a></li>
+                <li><a href="#" data-content="Don't hesitate">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div id="navbar">
+        <div
+            style="font-size: 20px; font-weight: bolder; margin-left: 1.7rem; ; float: left;display: block;color: black;text-align: center;padding-top: 8px;text-decoration: none;">
+            WEBQOD
+        </div>
+        <a href="#news"
+            style="float: right; margin-right: 6rem;   padding-bottom: 3px;border-bottom: 1px solid #222; right: 1rem; position: fixed;">+233240263545
+        </a>
+
+
+
+        <div class="open-overlay">
+            <span class="bar-top"></span>
+            <span class="bar-middle"></span>
+            <span class="bar-bottom" style="margin-left: 20px;"></span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="videos/Animated2.mp4" type="video/mp4">
+    </video>
+
+
+
+
+
+
+
+    <div class="section">
+
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <p style="color: rgb(245, 111, 94);"> LET’S CREATE YOUR SUCCESS TOGETHER. </p>
+
+                <h4 style="font-weight: 450; color: #333;">A Digital Marketing and Custom Web Design agency</h4>
+            </div>
+
+
+            <div class="col s12 m6 l6" style="height: 0px;">
+                <div class="row">
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <button class="button-48" role="button"><span class="text">
+                        <p style="color: rgb(245, 111, 94);">GET IN TOUCH</p>
+                    </span></button>
+
+            </div>
+
+
+            <div class="col s12 m6 l6">
+                <div class="row">
+                    <div class="col s6">
+                        <p style="color: rgb(245, 111, 94);">OUR WORK</p>
+                        <p>Creating great work that get result</p>
+                    </div>
+                    <div class="col s6">
+                        <p style="color: rgb(245, 111, 94);">OUR SERVICES</p>
+                        <p>Everything Digital under one root</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+   
+
+    
+
+
+
+
+    <div class="link-area">
+        <i class="small material-icons" style="color: #fff;">chat_bubble</i>
+    </div>
+
+</body>
+
+
+
+<script>
+    /*Overlay Animated*/
+    $('.open-overlay').click(function () {
+        $('.open-overlay').css('pointer-events', 'none');
+        var overlay_navigation = $('.overlay-navigation'),
+            top_bar = $('.bar-top'),
+            middle_bar = $('.bar-middle'),
+            bottom_bar = $('.bar-bottom');
+
+        overlay_navigation.toggleClass('overlay-active');
+        if (overlay_navigation.hasClass('overlay-active')) {
+
+            top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
+            middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
+            bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
+            overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down')
+            overlay_navigation.velocity('transition.slideLeftIn', {
+                duration: 300,
+                delay: 0,
+                begin: function () {
+                    $('nav ul li').velocity('transition.perspectiveLeftIn', {
+                        stagger: 150,
+                        delay: 0,
+                        complete: function () {
+                            $('nav ul li a').velocity({
+                                opacity: [1, 0],
+                            }, {
+                                delay: 10,
+                                duration: 140
+                            });
+                            $('.open-overlay').css('pointer-events', 'auto');
+                        }
+                    })
+                }
+            })
+
+        } else {
+            $('.open-overlay').css('pointer-events', 'none');
+            top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
+            middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
+            bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
+            overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up')
+            $('nav ul li').velocity('transition.perspectiveRightOut', {
+                stagger: 150,
+                delay: 0,
+                complete: function () {
+                    overlay_navigation.velocity('transition.fadeOut', {
+                        delay: 0,
+                        duration: 300,
+                        complete: function () {
+                            $('nav ul li a').velocity({
+                                opacity: [0, 1],
+                            }, {
+                                delay: 0,
+                                duration: 50
+                            });
+                            $('.open-overlay').css('pointer-events', 'auto');
+                        }
+                    });
+                }
+            })
+        }
+    })
+</script>
+
+
+
+
+
+
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+</html>
